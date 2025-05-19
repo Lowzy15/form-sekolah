@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Data Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Data Siswa</h1>
+        <nav>
+            <a href="register.html">Tambah Data</a>
+            <a href="datasiswa.php">Lihat Data</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Tambah Data Siswa/Guru</h2>
+        <form action="register.php" method="POST" class="form-register">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama siswa" required>
+
+            <label for="nisn">NIS/MP:</label>
+            <input type="text" id="nisn" name="nisn" placeholder="Masukkan NIS/MP" required>
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="">--Pilih Jenis Kelamin--</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="jurusan">jurusan:</label>
+            <input type="text" id="jurusan" name="jurusan" placeholder="Masukkan jurusan" required>
+
+            <label for="sebagai">sebagai:</label>
+            <select id="sebagai" name="sebagai" required>
+                <option value="">--sebagai--</option>
+                <option value="Laki-Laki">guru</option>
+                <option value="Perempuan">siswa</option>
+            </select>
+
+
+            <input type="submit" name="submit" value="Register">
+        </form>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
